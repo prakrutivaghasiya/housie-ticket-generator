@@ -12,7 +12,7 @@ for i in range(3):
 ticket = [[0 for i in range(9)] for i in range(3)]
 # print(ticket)
 
-# ----- Replacing 0's of ticket with 1's where the numbers are supposed to placed according to columns we chose randomly -----
+# ----- Replacing 0's of ticket with 1's where the numbers are supposed to be placed according to columns we chose randomly -----
 k = 0
 for i in range(len(columns)):
     for j in range(len(columns[i])):
