@@ -8,3 +8,5 @@ To **run** the code:
 
 This code prints the ticket in the _console_.
 You will get the ticket similar to the given image.
+
+![Ticket](housie-ticket-example.png)
