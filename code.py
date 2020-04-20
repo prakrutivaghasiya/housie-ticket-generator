@@ -1,4 +1,5 @@
 import random 
+from tabulate import tabulate
 
 # ----- Choosing the 5 columns out of 9 in which we will place numbers of the ticket -----
 columns = []
@@ -45,13 +46,13 @@ for i in range(len(ticket)):
             ticket[i][j] = values[i][j]
 
 print()  
-print()
 
-# ----- Printing ticket -----
-for i in range(len(ticket)):
-    for j in range(len(ticket[i])):
-        print(ticket[i][j], end=" | ")
-    print()
+# ----- Printing ticket using simple python-----
+# for i in range(len(ticket)):
+#     for j in range(len(ticket[i])):
+#         print(ticket[i][j], end=" | ")
+#     print()
 
-print()
+# ----- Printing ticket using tabulate library -----
+print(tabulate(ticket, tablefmt = "fancy_grid", numalign = "center"))
 print()
