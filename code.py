@@ -13,7 +13,7 @@ for i in range(3):
 ticket = [[0 for i in range(9)] for i in range(3)]
 # print(ticket)
 
-# ----- Replacing 0's of ticket with 1's where the numbers are supposed to be placed according to columns we chose randomly -----
+# ----- Replacing 0's of ticket with 1's where the numbers are supposed to be placed according to columns we chose randomly : Code - 1 -----
 k = 0
 for i in range(len(columns)):
     for j in range(len(columns[i])):
@@ -39,12 +39,21 @@ for i in range(9):
 values = [[cols[j][i] for j in range(len(cols))] for i in range(len(cols[i]))]
 # print(values)
 
-# ----- Finally replacing the values in ticket where ticket number is '1' -----
+# ----- Finally replacing the values in ticket where ticket number is '1' : Code - 2 -----
 for i in range(len(ticket)):
     for j in range(len(ticket[i])):
         if ticket[i][j] == 1:
             ticket[i][j] = values[i][j]
 
+# ----- Alternate Method - Alternatively, you can combine the codes i.e. Code - 1 and Code - 2  as follows -----
+# k = 0
+# for i in range(len(columns)):
+#     for j in range(len(columns[i])):
+#         ticket[k][columns[i][j]] = values[i][j]
+#         if ticket[i][j] == 0:
+#             ticket[i][j] = " "
+#     k += 1
+    
 print()  
 
 # ----- Printing ticket using simple python-----
