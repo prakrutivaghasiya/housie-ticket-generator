@@ -8,7 +8,7 @@ for i in range(3):
 
 # print(columns)
 
-# ----- Creating empty ticket with values 0 at every place using list comprehension -----
+# ----- Initilizing ticket with value 0 using list comprehension -----
 ticket = [[0 for i in range(9)] for i in range(3)]
 # print(ticket)
 
